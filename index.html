@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="description"
+              content="Disentangled Latent Spaces Facilitate Data-Driven Auxiliary Learning. Under review in Pattern Recognition Letters">
+        <meta name="keywords" content="Split Computing, Multi-Task Learning, Deep Neural Networks, Edge Devices">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Disentangled Latent Spaces Facilitate Data-Driven Auxiliary Learning</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+              rel="stylesheet">
+
+        <link rel="stylesheet" href="./static/css/bulma.min.css">
+        <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+        <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+        <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+        <link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+        <link rel="stylesheet" href="./static/css/index.css">
+        <link rel="icon" href="./static/images/intelligo.png">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script defer src="./static/js/fontawesome.all.min.js"></script>
+        <script src="./static/js/bulma-carousel.min.js"></script>
+        <script src="./static/js/bulma-slider.min.js"></script>
+        <script src="./static/js/index.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+                    <a class="navbar-item" target="_blank" href="https://capogrosso.eu">
+                        <span class="icon">
+                            <i class="fas fa-home"></i>
+                        </span>
+                    </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                          More Research
+                        </a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" target="_blank" href="https://github.com/intelligolabs">
+                                Intelligo ML Lab
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Title, authors, institution, links. -->
+        <section class="hero">
+            <div class="hero-body">
+                <div class="container is-max-desktop">
+                    <div class="columns is-centered">
+                        <div class="column has-text-centered">
+                            <h1 class="title is-1 publication-title">Disentangled Latent Spaces Facilitate Data-Driven Auxiliary Learning</h1>
+                            <div class="is-size-5 publication-authors">
+                                <span class="author-block">
+                                    <a target="_blank" href="https://geriskenderi.github.io">Geri Skenderi</a><sup>1</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="https://www.capogrosso.eu">Luigi Capogrosso</a><sup>1</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="https://atoaiari.github.io">Andrea Toaiari</a><sup>1</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="https://intelligolabs.net/team/matteo-denitto/">Matteo Denitto</a><sup>2</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="https://www.dimi.univr.it/?ent=persona&id=59&lang=en">Franco Fummi</a><sup>1</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="https://sites.google.com/site/melzismn">Simone Melzi</a><sup>3</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="https://www.dimi.univr.it/?ent=persona&id=218&lang=en">Marco Cristani</a><sup>1</sup>
+                                </span>
+                            </div>
+
+                            <div class="is-size-5 publication-authors">
+                                <span class="author-block">
+                                    <sup>1</sup>
+                                    Department of Engineering for Innovation Medicine, University of Verona, Italy
+                                </span>
+                                <span class="author-block">
+                                    <sup>2</sup>
+                                    HUMATICS - SYS-DAT Group, Italy
+                                </span>
+                                <span class="author-block">
+                                    <sup>3</sup>
+                                    Department of Informatics, Systems and Communication, University of Milano-Bicocca, Italy
+                                </span>
+                            </div>
+
+                            <div class="column has-text-centered">
+                                <div class="publication-links">
+                                    <!-- Proceedings link. -->
+                                    <span class="link-block">
+                                        <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
+                                            <span class="icon">
+                                                <i class="fas fa-file-pdf"></i>
+                                            </span>
+                                            <span>Paper</span>
+                                        </a>
+                                    </span>
+                                    <!-- arXiv link. -->
+                                    <span class="link-block">
+                                        <a target="_blank" href="https://arxiv.org/abs/2310.09278" class="external-link button is-normal is-rounded is-dark">
+                                            <span class="icon">
+                                                <i class="ai ai-arxiv"></i>
+                                            </span>
+                                            <span>arXiv</span>
+                                        </a>
+                                    </span>
+                                    <!-- Code link. -->
+                                    <span class="link-block">
+                                        <a target="_blank" href="https://github.com/intelligolabs/Detaux" class="external-link button is-normal is-rounded is-dark">
+                                            <span class="icon">
+                                                <i class="fab fa-github"></i>
+                                            </span>
+                                        <span>Code</span>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teaser. -->
+        <section class="hero teaser">
+            <div class="container is-max-desktop">
+                <div class="hero-body has-text-centered">
+                    <img src="./static/images/teaser.png" alt="I-SPLIT abstract" type="image/png">
+                    <h6 class="subtitle is-6 has-text-centered">
+                        Detaux involves two steps.
+                        1) First, we use weakly supervised disentanglement to isolate the structural features specific to the principal task in one subspace (red rectangle at the top of the image).
+                        2) Next, we identify the subspace with the most disentangled factor of variation related to the principal task, and through a clustering module, we obtain new labels (blue rectangle in the bottom left part of the image).
+                        These can be used to create a new classification task combined with the principal task in any MTL model (bottom right part of the image).
+                    </h6>
+                </div>
+            </div>
+        </section>
+
+        <!-- Abstract. -->
+        <section class="section">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">Abstract</h2>
+                        <div class="content has-text-justified">
+                            <p>
+                                In deep learning, auxiliary objectives are often used to facilitate learning in situations where data is scarce or the principal task is extremely complex.
+                                This idea is primarily inspired by the improved generalization capability induced by solving multiple tasks simultaneously, which leads to a more robust shared representation.
+                                Nevertheless, finding optimal auxiliary tasks that give rise to the desired improvement is a crucial problem that often requires hand-crafted solutions or expensive meta-learning approaches.
+                                In this paper, we propose a novel framework, dubbed <i>Detaux</i>, whereby a weakly supervised disentanglement procedure is used to discover new unrelated classification tasks and the associated labels that can be exploited with the principal task in any Multi-Task Learning (MTL) model.
+                                The disentanglement procedure works at a representation level, isolating a subspace related to the principal task, plus an arbitrary number of orthogonal subspaces.
+                                In the most disentangled subspaces, we generate the additional classification tasks through a clustering procedure, and the associated labels become their representatives.
+                                Subsequently, the original data, the labels associated with the principal task, and the newly discovered ones can be fed into any MTL framework.
+                                Extensive validation on both synthetic and real data, along with various ablation studies, demonstrate promising results, revealing the potential in what has been, so far, an unexplored connection between learning disentangled representations and MTL.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Citation. -->
+        <section class="section" id="BibTeX">
+            <div class="container is-max-desktop content">
+                <h2 class="title">BibTeX</h2>
+<pre><code>@article{skenderi2023disentangled,
+    title={Disentangled Latent Spaces Facilitate Data-Driven Auxiliary Learning},
+    author={Skenderi, Geri and Capogrosso, Luigi and Toaiari, Andrea and Denitto, Matteo and Fummi, Franco and Melzi, Simone and Cristani, Marco},
+    journal={arXiv preprint arXiv:2310.09278},
+    year={2023}
+}
+</code></pre>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="content has-text-centered">
+                    <a class="icon-link" target="_blank" href="https://github.com/luigicapogrosso" class="external-link" disabled>
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="columns is-centered">
+                    <div class="column is-8">
+                        <div class="content">
+                            <p>
+                                This website is licensed under a <a rel="license" target="_blank"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                                Commons Attribution-ShareAlike 4.0 International License</a>.
+                            </p>
+                            <p>
+                                The source code is based on <a target="_blank" href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>
