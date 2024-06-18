@@ -1,0 +1,21 @@
+# SHAPES DETAUX.
+python detaux.py \
+--k 1 \
+--max_epochs 40 \
+--batch_size 32 \
+--gpu_idx 0 \
+--limit_val_batches 1 \
+--log_every_n_steps 30 \
+--dataset_fraction 1.0 \
+--outpath pipeline/outputs \
+--oracle_probability 0.5 \
+--forced \
+--dataset_path /data/3dshapes.h5 \
+--n_dataset 4 \
+--latentdim 10 \
+--n_latent_factors 10 \
+--noise \
+--learning_rate 5e-4 \
+--observation 3 \
+--conv_model simpleconv \
+--wandb
