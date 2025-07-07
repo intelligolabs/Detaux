@@ -1,6 +1,10 @@
 # Disentangled Latent Spaces Facilitate Data-Driven Auxiliary Learning #
 
-Official implementation of the paper [Disentangled Latent Spaces Facilitate Data-Driven Auxiliary Learning](https://intelligolabs.github.io/Detaux/) accepted at the 61st Design Automation Conference (DAC 2024).
+Official implementation of the paper [Disentangled Latent Spaces Facilitate Data-Driven Auxiliary Learning](https://intelligolabs.github.io/Detaux/) accepted at the 23rd International Conference on Image Analysis and Processing (ICIAP 2025).
+
+<p align="center">
+    <img src="assets/detaux.png" width=900/>
+</p>
 
 ## Installation ##
 **1. Repository setup:**
@@ -28,6 +32,9 @@ Official implementation of the paper [Disentangled Latent Spaces Facilitate Data
 2. To run the clustering part, use the file `clustering.py`.
 3. Finally, with the file `aux_learning.py`, you will be able to perform the auxiliary learning phase with the new labels discovered in step 2.
 
+## Credits ##
+We want to thank Marco Fumero for the repository [PMPdisentanglement](https://github.com/marc0git/PMPdisentanglement), which provides us with the scripts used to manage the disentanglement part.
+
 ## Authors ##
 Geri Skenderi<sup>1</sup>, Luigi Capogrosso<sup>2</sup>, Andrea Toaiari<sup>2</sup>, Matteo Denitto<sup>3</sup>, Franco Fummi<sup>2</sup>, Simone Melzi<sup>4</sup>
 
@@ -39,8 +46,6 @@ Geri Skenderi<sup>1</sup>, Luigi Capogrosso<sup>2</sup>, Andrea Toaiari<sup>2</s
 
 <sup>4</sup> *University of Milano-Bicocca, Dept. of Informatics, Systems and Communication, Milan, Italy*
 
-<sup>1</sup> `geri.skenderi@unibocconi.it`, <sup>2</sup> `name.surname@univr.it`, <sup>3</sup> `matteo.denitto@sys-datgroup.com`, <sup>4</sup> `simone.melzi@unimib.it`,
-
 ## Citation ##
 If you use [**Detaux**](https://arxiv.org/abs/2310.09278), please, cite the following paper:
 ```
@@ -51,6 +56,3 @@ If you use [**Detaux**](https://arxiv.org/abs/2310.09278), please, cite the foll
   year    = {2023}
 }
 ```
-
-## Credits ##
-We want to thank Marco Fumero for the repository [PMPdisentanglement](https://github.com/marc0git/PMPdisentanglement), which provides us with the scripts used to manage the disentanglement part.
