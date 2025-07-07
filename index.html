@@ -70,37 +70,38 @@
                                     <a target="_blank" href="https://geriskenderi.github.io">Geri Skenderi</a><sup>1</sup>,
                                 </span>
                                 <span class="author-block">
-                                    <a target="_blank" href="https://www.capogrosso.eu">Luigi Capogrosso</a><sup>1</sup>,
+                                    <a target="_blank" href="https://www.capogrosso.eu">Luigi Capogrosso</a><sup>2</sup>,
                                 </span>
                                 <span class="author-block">
-                                    <a target="_blank" href="https://atoaiari.github.io">Andrea Toaiari</a><sup>1</sup>,
+                                    <a target="_blank" href="https://atoaiari.github.io">Andrea Toaiari</a><sup>2</sup>,
                                 </span>
                                 <span class="author-block">
-                                    <a target="_blank" href="https://intelligolabs.net/team/matteo-denitto/">Matteo Denitto</a><sup>2</sup>,
+                                    <a target="_blank" href="https://intelligolabs.net/team/matteo-denitto/">Matteo Denitto</a><sup>3</sup>,
                                 </span>
                                 <span class="author-block">
-                                    <a target="_blank" href="https://www.dimi.univr.it/?ent=persona&id=59&lang=en">Franco Fummi</a><sup>1</sup>,
+                                    <a target="_blank" href="https://www.dimi.univr.it/?ent=persona&id=59&lang=en">Franco Fummi</a><sup>2</sup>,
                                 </span>
                                 <span class="author-block">
-                                    <a target="_blank" href="https://sites.google.com/site/melzismn">Simone Melzi</a><sup>3</sup>,
-                                </span>
-                                <span class="author-block">
-                                    <a target="_blank" href="https://www.dimi.univr.it/?ent=persona&id=218&lang=en">Marco Cristani</a><sup>1</sup>
+                                    <a target="_blank" href="https://sites.google.com/site/melzismn">Simone Melzi</a><sup>4</sup>
                                 </span>
                             </div>
 
                             <div class="is-size-5 publication-authors">
                                 <span class="author-block">
                                     <sup>1</sup>
-                                    University of Verona, Str. le Grazie, 15, Verona, 37134, Italy
+                                    Bocconi University, Bocconi Institute for Data Science and Analytics, Milan, Italy
                                 </span>
                                 <span class="author-block">
                                     <sup>2</sup>
-                                    HUMATICS - SYS-DAT Group, Str. le Grazie, 15, Verona, 37134, Italy
+                                    University of Verona, Dept. of Engineering for Innovation Medicine, Verona, Italy
                                 </span>
                                 <span class="author-block">
                                     <sup>3</sup>
-                                    University of Milano-Bicocca, Piazza dell'Ateneo Nuovo, 1, Milan, 20126, Italy
+                                    HUMATICS - SYS-DAT Group, Verona, Italy
+                                </span>
+                                <span class="author-block">
+                                    <sup>4</sup>
+                                    University of Milano-Bicocca, Dept. of Informatics, Systems and Communication, Milan, Italy
                                 </span>
                             </div>
 
@@ -135,6 +136,13 @@
                                     </span>
                                 </div>
                             </div>
+
+                            <div class="columns is-centered">
+                                <div class="column has-text-centered">
+                                    <span class="tag is-success is-primary is-large">🎉 Accepted @ ICIAP 2025 🎉</span>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -147,7 +155,7 @@
                 <div class="hero-body has-text-centered">
                     <img src="./static/images/teaser.png" alt="Detaux teaser" type="image/png">
                     <h6 class="subtitle is-6 has-text-centered">
-                        Detaux involves two steps. 
+                        Detaux involves two steps.
                         1) First, we use weakly supervised disentanglement to isolate the structural features specific to the principal task in one subspace (red rectangle at the top of the image).
                         2) Next, we identify the subspace with the most disentangled factor of variation related to the principal task, and through a clustering module, we obtain new labels (blue rectangle in the bottom left part of the image).
                         These can be used to create a new classification task that can be combined with the principal task in any MTL model (bottom right part of the image).
@@ -164,14 +172,14 @@
                         <h2 class="title is-3">Abstract</h2>
                         <div class="content has-text-justified">
                             <p>
-                                In deep learning, auxiliary objectives are often used to facilitate learning in situations where data is scarce or the principal task is extremely complex.
+                                Auxiliary tasks facilitate learning in situations when data is scarce or the principal task of focus is extremely complex.
                                 This idea is primarily inspired by the improved generalization capability induced by solving multiple tasks simultaneously, which leads to a more robust shared representation.
-                                Nevertheless, finding optimal auxiliary tasks that give rise to the desired improvement is a crucial problem that often requires hand-crafted solutions or expensive meta-learning approaches.
-                                In this paper, we propose a novel framework, dubbed <i>Detaux</i>, whereby a weakly supervised disentanglement procedure is used to discover new unrelated classification tasks and the associated labels that can be exploited with the principal task in any Multi-Task Learning (MTL) model.
-                                The disentanglement procedure works at a representation level, isolating a subspace related to the principal task, plus an arbitrary number of orthogonal subspaces.
-                                In the most disentangled subspaces, we generate the additional classification tasks through a clustering procedure, and the associated labels become their representatives.
+                                Nevertheless, finding optimal auxiliary tasks is a crucial problem that often requires hand-crafted solutions or expensive meta-learning approaches.
+                                In this paper, we propose a novel framework, dubbed Detaux, whereby a weakly supervised disentanglement procedure is used to discover a new unrelated auxiliary classification task, which allows us to go from a Single-Task Learning (STL) to a Multi-Task Learning (MTL) problem.
+                                The disentanglement procedure works at the representation level, isolating the variation related to the principal task into an isolated subspace and additionally producing an arbitrary number of orthogonal subspaces, each of them encouraging high separability among projections.
+                                We generate the auxiliary classification task through a clustering procedure on the most disentangled subspace, obtaining a discrete set of labels.
                                 Subsequently, the original data, the labels associated with the principal task, and the newly discovered ones can be fed into any MTL framework.
-                                Extensive validation on both synthetic and real data, along with various ablation studies, demonstrate promising results, revealing the potential in what has been, so far, an unexplored connection between learning disentangled representations and MTL.
+                                Experimental validation on both synthetic and real data, along with various ablation studies, demonstrate promising results, revealing the potential in what has been, so far, an unexplored connection between learning disentangled representations and MTL.
                             </p>
                         </div>
                     </div>
@@ -183,13 +191,12 @@
         <section class="section" id="BibTeX">
             <div class="container is-max-desktop content">
                 <h2 class="title">BibTeX</h2>
-<pre><code>@article{skenderi2023disentangled,
-    title={Disentangled Latent Spaces Facilitate Data-Driven Auxiliary Learning},
-    author={Skenderi, Geri and Capogrosso, Luigi and Toaiari, Andrea and Denitto, Matteo and Fummi, Franco and Melzi, Simone and Cristani, Marco},
-    journal={arXiv preprint arXiv:2310.09278},
-    year={2023}
-}
-</code></pre>
+<pre><code>@Article{skenderi2023disentangled,
+  title   = {{Disentangled Latent Spaces Facilitate Data-Driven Auxiliary Learning}},
+  author  = {Skenderi, Geri and Capogrosso, Luigi and Toaiari, Andrea and Denitto, Matteo and Fummi, Franco and Melzi, Simone and Cristani, Marco},
+  journal = {arXiv preprint arXiv:2310.09278},
+  year    = {2023}
+}</code></pre>
             </div>
         </section>
 
